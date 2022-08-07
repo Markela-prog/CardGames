@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="vieport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="blackJack.js"></script>
+  </head>
+  <style>
+    body {
+      background-image: url("./Background/background.jpg");
+    }
+  </style>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Exit</a></li>
+        <!-- <li><a href="blackJack.html">BlackJack</a></li> -->
+      </ul>
+    </nav>
+
+    <div id="audio">
+      <audio controls autoplay loop> 
+
+        <source src="./Background/background_music.mp3">
+       </audio>
+    </div>
+
+    <div id="chips" >
+      <img id="chip-100" class="chipsClass" src="Chips/Chip_100.png" />
+      <img id="chip-500" class="chipsClass" src="Chips/Chip_500.png" />
+      <img id="chip-1000" class="chipsClass" src="Chips/Chip_1000.png" />
+      <img id="chip-5000" class="chipsClass" src="Chips/Chip_5000.png" />
+      <img id="chip-10000" class="chipsClass" src="Chips/Chip_10000.png" />
+    </div>
+
+    <div id="cards">
+      <h2>Dealer: <span id="dealer-sum"></span></h2>
+
+      <div id="dealer-cards">
+      </div>
+
+      <h2>You: <span id="your-sum"></span></h2>
+      <div id="your-cards"></div>
+
+      <br />
+      <button id ="bet">Bet</button>
+      <button id ="bet100">Bet100</button>
+      <button id ="bet500">Bet500</button>
+      <button id ="bet1000">Bet1000</button>
+      <button id ="bet5000">Bet5000</button>
+      <button id ="bet10000">Bet10000</button>
+      <button id="hit">Hit</button>
+      <button id="stay">Stay</button>
+      <button id="play-again" disabled>Play Again</button>
+      <p id="results"></p>
+      <h2>Total bet : <span id="totalBet"></h2>
+      <h2>Your balance : <span id="balance"></h2>
+    </div>
+  </body>
+</html>
